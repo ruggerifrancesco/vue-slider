@@ -14,7 +14,13 @@
 
         <section class="my_slider-container">
             <div class="img-wrapper">
+                <div class="prevBtn">
+                    <i class="fa-solid fa-angles-left"></i>
+                </div>
                 <img :src="imagesSlider[activeIndex].image" :alt="imagesSlider[activeIndex].title" />
+                <div class="nextBtn">
+                    <i class="fa-solid fa-angles-right"></i>
+                </div>
             </div>
             <h1>{{ imagesSlider[activeIndex].title }}</h1>
             <p>{{ imagesSlider[activeIndex].text }}</p>
