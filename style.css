@@ -32,6 +32,7 @@ h1 {
     bottom: 18%;
     left: 3rem;
     font-size: 3rem;
+    text-shadow: 2px 2px 4px black;
 }
 
 p {
@@ -42,6 +43,7 @@ p {
     left: 3rem;
     font-size: 1.2rem;
     width: 40%;
+    text-shadow: 2px 2px 4px black;
 }
 
 .my_slider-container {
