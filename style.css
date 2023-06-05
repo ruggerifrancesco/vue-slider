@@ -16,7 +16,6 @@ img {
     display: block;
     width: 100%;
     height: auto;
-    object-fit: cover;
 }
 
 #app {
@@ -28,5 +27,22 @@ img {
 }
 
 .my_slider-container {
-    width: 400px;
+    position: relative;
+    width: 760px;
+    height: 450px;
+    border-radius: 50% / 10%;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.my_slider-container::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    right: -5%;
+    left: -5%;
+    background: inherit;
+    border-radius: 5% / 50%;
 }
