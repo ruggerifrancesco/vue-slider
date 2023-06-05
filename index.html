@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue Slider</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,11 +14,10 @@
 
         <section class="my_slider-container">
             <div class="img-wrapper">
-                <img :src="imagesSlider[0].image" :alt="imagesSlider[0].title" />
+                <img :src="imagesSlider[activeIndex].image" :alt="imagesSlider[activeIndex].title" />
             </div>
-            <h1>{{ imagesSlider[0].title }}</h1>
-            <p>{{ imagesSlider[0].text }}</p>
-
+            <h1>{{ imagesSlider[activeIndex].title }}</h1>
+            <p>{{ imagesSlider[activeIndex].text }}</p>
         </section>
 
     </div>
