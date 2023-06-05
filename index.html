@@ -14,11 +14,11 @@
 
         <section class="my_slider-container">
             <div class="img-wrapper">
-                <div class="prevBtn" @click="prevSlide">
+                <div class="prevBtn" @click="prevSlide()">
                     <i class="fa-solid fa-angles-left"></i>
                 </div>
                 <img :src="imagesSlider[activeIndex].image" :alt="imagesSlider[activeIndex].title" />
-                <div class="nextBtn" @click="nextSlide">
+                <div class="nextBtn" @click="nextSlide()">
                     <i class="fa-solid fa-angles-right"></i>
                 </div>
             </div>
