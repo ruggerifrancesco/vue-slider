@@ -31,10 +31,10 @@ import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
     },
     methods: {
         prevSlide() {
-            
+            this.activeIndex--
         },
         nextSlide () {
-
+            this.activeIndex++
         }
       }
   }).mount('#app')
