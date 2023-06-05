@@ -13,9 +13,10 @@
     <div id="app">
 
         <section class="my_slider-container">
-
-            <img :src="imagesSlider[0].image" :alt="imagesSlider[0].title" />
-            <h2>{{ imagesSlider[0].title }}</h2>
+            <div class="img-wrapper">
+                <img :src="imagesSlider[0].image" :alt="imagesSlider[0].title" />
+            </div>
+            <h1>{{ imagesSlider[0].title }}</h1>
             <p>{{ imagesSlider[0].text }}</p>
 
         </section>
