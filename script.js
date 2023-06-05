@@ -38,6 +38,9 @@ import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
         },
         nextSlide () {
             this.activeIndex++
+            if (this.activeIndex >= this.imagesSlider.length) {
+                this.activeIndex = 0
+            }
         }
     }
   }).mount('#app')
