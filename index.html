@@ -28,7 +28,7 @@
         </section>
 
         <section class="my_slider-thumbnails">
-                <div v-for="slideThumbnail in imagesSlider" class="thumbnail-item">
+            <div v-for="(slideThumbnail, index) in imagesSlider" :key="index" :class="{ 'thumbnail-item': true, active: index === activeIndex }">
                     <img :src="slideThumbnail.image" :alt="slideThumbnail.title" />
                 </div>
         </section>
