@@ -11,10 +11,10 @@
 <body>
     <script src="script.js" type="module"></script>
     <div id="app">
-        <div v-for="slide in imagesSlider" :key="slide.title">
-            <img :src="slide.image" :alt="slide.title" />
-            <h2>{{ slide.title }}</h2>
-            <p>{{ slide.text }}</p>
+        <div v-for="slideItem in imagesSlider" :key="slideItem.title">
+            <img :src="slideItem.image" :alt="slideItem.title" />
+            <h2>{{ slideItem.title }}</h2>
+            <p>{{ slideItem.text }}</p>
         </div>
     </div>
 </body>
