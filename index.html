@@ -29,9 +29,10 @@
 
         <section class="my_slider-thumbnails">
             <div v-for="(slideThumbnail, index) in imagesSlider" :key="index" 
-                :class="{ 'thumbnail-item': true, 'active-thumbnail': index === activeIndex }">
+                :class="{ 'thumbnail-item': true, 'active-thumbnail': index === activeIndex }"
+                @click="currentSlide(index)">
                     <img :src="slideThumbnail.image" :alt="slideThumbnail.title" />
-                </div>
+            </div>
         </section>
 
     </div>

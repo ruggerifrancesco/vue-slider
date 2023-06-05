@@ -41,6 +41,9 @@ import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
             if (this.activeIndex >= this.imagesSlider.length) {
                 this.activeIndex = 0
             }
+        },
+        currentSlide(index) {
+            this.activeIndex = index
         }
     }
   }).mount('#app')
