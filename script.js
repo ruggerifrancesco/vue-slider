@@ -44,6 +44,14 @@ import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
         },
         currentSlide(index) {
             this.activeIndex = index
-        }
+        },
+        startSlideShow() {
+            setInterval(() => {
+              this.nextSlide();
+            }, 3000);
+        },
+    },
+    mounted() {
+        this.startSlideShow();
     }
   }).mount('#app')
