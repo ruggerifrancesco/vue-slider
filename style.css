@@ -114,6 +114,10 @@ p {
     filter: brightness(25%);
 }
 
+.thumbnail-item:hover {
+    transform: scale(1.05);
+}
+
 .active-thumbnail {
     filter: brightness(100%);
 }
