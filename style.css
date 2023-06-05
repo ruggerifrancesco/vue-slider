@@ -12,10 +12,21 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 #app {
     height: 100vh;
     display: flex;
     max-width: 1400px;
     justify-content: center;
     align-items: center;
+}
+
+.my_slider-container {
+    width: 400px;
 }
