@@ -102,3 +102,7 @@ p {
     cursor: pointer;
     filter: brightness(25%);
 }
+
+.active-thumbnail {
+    filter: brightness(100%);
+}
