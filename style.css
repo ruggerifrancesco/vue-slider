@@ -55,6 +55,16 @@ p {
     position: relative;
 }
 
+.slider-inner-shadow {
+    background: linear-gradient(180deg, rgba(255,255,255,0) 45%, rgba(3,3,3,1) 100%);
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
 .img-wrapper {
     width: 100%;
     height: 100%;
@@ -70,6 +80,7 @@ p {
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+    z-index: 6;
 }
 
 .prevBtn {
