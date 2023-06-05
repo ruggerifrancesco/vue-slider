@@ -32,9 +32,12 @@ import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
     methods: {
         prevSlide() {
             this.activeIndex--
+            if (this.activeIndex < 0) {
+                this.activeIndex = this.imagesSlider.length - 1
+            }
         },
         nextSlide () {
             this.activeIndex++
         }
-      }
+    }
   }).mount('#app')
