@@ -24,6 +24,13 @@
             </div>
             <h1>{{ imagesSlider[activeIndex].title }}</h1>
             <p>{{ imagesSlider[activeIndex].text }}</p>
+
+        </section>
+
+        <section class="my_slider-thumbnails">
+                <div v-for="slideThumbnail in imagesSlider" class="thumbnail-item">
+                    <img :src="slideThumbnail.image" :alt="slideThumbnail.title" />
+                </div>
         </section>
 
     </div>
